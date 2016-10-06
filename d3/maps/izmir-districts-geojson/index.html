@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>GeoJSON - Izmir Districts</title>
+
+	<link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+	<style type="text/css">
+		#map {
+			border: 2px solid #ccc;
+		}
+		#tooltip {
+	        position: absolute;
+	        display: none;
+	        width: 250px;
+	        /*height: 400px;*/
+	        top: 250px;
+	        left: 150px;
+	        border: 1px solid #ccc;
+	        border-radius: 5%;
+	        overflow: hidden;
+
+	    }
+		.tooltip-header {
+	        width: 100%;        
+	        margin: 0;
+	        padding: 3px 3px;
+	        background: #444;
+
+	    }
+		.tooltip-header h5 {
+		  color: #fff;
+		  font-size: 1.10em;
+		  font-weight: bold;
+		  font-family: 'Lato', sans-serif;
+		  text-align: center;
+		}
+		.tooltip-body {
+		        width: 100%;
+		        margin: 0;
+		        padding: 3px 3px;
+		        background-color: rgb(240,240,240);
+
+		    }
+		.tooltip-body p {
+		  font-size: 14px;
+		}
+		.tooltip-footer {
+		        width: 100%;
+		        margin: 0;
+		        padding: 1px 1px;
+
+		    }
+
+	</style>
+</head>
+<body>	
+	<script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
+	<script type="text/javascript" src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="bower_components/d3/d3.min.js"></script>
+	<script type="text/javascript" src="app.js"></script>
+
+	<section class="container">
+		<div class="row">
+			<h2>Izmir Districts - GeoJSON</h2>
+		</div>
+		<div class="row">
+			<div class="col-md-12">
+				<div id="map"></div>
+			</div>
+		</div>
+	</section>
+
+	<div id="tooltip">
+		<div class="tooltip-header"></div>
+		<div class="tooltip-body"></div>
+	</div>
+
+</body>
+</html>
